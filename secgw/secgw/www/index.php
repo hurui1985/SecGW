@@ -53,6 +53,7 @@ if (isset($_REQUEST['closenotice'])) {
 	sleep(1);
 }
 
+
 if ($g['disablecrashreporter'] != true) {
 	// Check to see if we have a crash report
 	$x = 0;
@@ -65,6 +66,8 @@ if ($g['disablecrashreporter'] != true) {
 
 	$crash = glob("/var/crash/*");
 	$skip_files = array(".", "..", "minfree", "");
+
+
 
 	if (is_array($crash)) {
 		foreach ($crash as $c) {
