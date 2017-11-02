@@ -1,6 +1,24 @@
 <?php
-ob_start();                   //打开缓冲区
-echo "Hello\n";               //输出
-header("location:index.php"); //把浏览器重定向到index.php
-ob_end_flush();               //输出全部内容到浏览器
+?>
+<html>
+    <head>
+        <title></title>
+    </head>
+
+    <body>
+
+
+
+        <script>
+            var events = [];
+            events.push(function(){
+
+                alert('ak455');
+            });
+
+            events[0]();
+
+        </script>
+    </body>
+</html>
 
